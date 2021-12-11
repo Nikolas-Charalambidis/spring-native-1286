@@ -1,4 +1,4 @@
-# Spring Native 1286
+# Spring Native issue [#1286](https://github.com/spring-projects-experimental/spring-native/issues/1286)
 
 This repository is a Spring Boot project built on top of the `2.6.1` parent version. 
 It is a reprocution of Spring Native issue [#1286](https://github.com/spring-projects-experimental/spring-native/issues/1286) describing a native Docker image using Packeto (that uses GraalVM) cannot be built. 
