@@ -1,3 +1,5 @@
+[![Java CI](https://github.com/Nikolas-Charalambidis/spring-native-1286/actions/workflows/ci.yml/badge.svg)](https://github.com/Nikolas-Charalambidis/spring-native-1286/actions/workflows/ci.yml)
+
 # Spring Native issue [#1286](https://github.com/spring-projects-experimental/spring-native/issues/1286)
 
 > 💡 **Resolved** (solution described at the bottom)**:** https://github.com/Nikolas-Charalambidis/spring-native-1286/pull/1
