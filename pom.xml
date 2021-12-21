@@ -13,12 +13,12 @@
 
     <groupId>io.nichar.sandbox</groupId>
     <artifactId>spring-native-1286</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <packaging>jar</packaging>
 
-    <name>spring-boot.reactive</name>
-    <description>Demo project for Spring Boot</description>
+    <name>spring-native-1286</name>
+    <description>Spring Native issue 1286</description>
 
     <properties>
         <java.version>17</java.version>
@@ -90,7 +90,6 @@
     </dependencies>
 
     <profiles>
-
         <profile>
             <id>native-docker-image</id>
             <build>

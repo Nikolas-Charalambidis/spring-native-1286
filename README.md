@@ -1,7 +1,7 @@
 # Spring Native issue [#1286](https://github.com/spring-projects-experimental/spring-native/issues/1286)
 
 This repository is a Spring Boot project built on top of the `2.6.1` parent version. 
-It is a reprocution of Spring Native issue [#1286](https://github.com/spring-projects-experimental/spring-native/issues/1286) describing a native Docker image using Packeto (that uses GraalVM) cannot be built. 
+It is a reproduction of Spring Native issue [#1286](https://github.com/spring-projects-experimental/spring-native/issues/1286) describing a native Docker image using Packeto (that uses GraalVM) cannot be built. 
 
 The repository contains a bunch of dependencies that might or might not be relevant (I reproduced with them). The most relevant dependencies are:
 - `org.springframework.boot`:`spring-boot-starter-data-r2dbc`
