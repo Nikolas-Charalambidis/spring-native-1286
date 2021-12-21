@@ -1,5 +1,7 @@
 # Spring Native issue [#1286](https://github.com/spring-projects-experimental/spring-native/issues/1286)
 
+> 💡 **Resolved** (solution described at the bottom)**:** https://github.com/Nikolas-Charalambidis/spring-native-1286/pull/1
+
 This repository is a Spring Boot project built on top of the `2.6.1` parent version. 
 It is a reproduction of Spring Native issue [#1286](https://github.com/spring-projects-experimental/spring-native/issues/1286) describing a native Docker image using Packeto (that uses GraalVM) cannot be built. 
 
@@ -78,4 +80,24 @@ va.lang.Object[]). To diagnose the issue you can use the --allow-incomplete-clas
 [INFO]     [creator]            at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.processBytecode(BytecodeParser.java:5419)
 [INFO]     [creator]            at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.iterateBytecodesForBlock(BytecodeParser.java:3477)
 [INFO]     [creator]            ... 39 more
+```
+
+## Solution
+
+The `spring-aot-maven-plugin` plugin was missing. This is well-documented at the [reference documentation](https://docs.spring.io/spring-native/docs/0.11.0/reference/htmlsingle/#_add_the_spring_aot_plugin):
+
+```xml
+<plugin>
+    <groupId>org.springframework.experimental</groupId>
+    <artifactId>spring-aot-maven-plugin</artifactId>
+    <version>0.11.0</version>
+    <executions>
+        <execution>
+            <id>generate</id>
+            <goals>
+                <goal>generate</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 ```
